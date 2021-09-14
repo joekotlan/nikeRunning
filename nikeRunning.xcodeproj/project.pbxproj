@@ -11,6 +11,12 @@
 		444CEB1726F04293003934E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444CEB1626F04293003934E7 /* ContentView.swift */; };
 		444CEB1926F04295003934E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444CEB1826F04295003934E7 /* Assets.xcassets */; };
 		444CEB1C26F04295003934E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444CEB1B26F04295003934E7 /* Preview Assets.xcassets */; };
+		444CEB2826F042FB003934E7 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444CEB2426F042A1003934E7 /* ClockView.swift */; };
+		444CEB2926F04300003934E7 /* ClockMarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444CEB2526F042A1003934E7 /* ClockMarks.swift */; };
+		444CEB2A26F04302003934E7 /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444CEB2626F042A1003934E7 /* ClockModel.swift */; };
+		444CEB2B26F04305003934E7 /* ClockIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444CEB2726F042A1003934E7 /* ClockIndicator.swift */; };
+		444CEB2E26F046CE003934E7 /* Tungsten-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 444CEB2D26F046CE003934E7 /* Tungsten-Bold.otf */; };
+		444CEB3226F04E38003934E7 /* HelveticaLTStd-Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 444CEB3126F04E38003934E7 /* HelveticaLTStd-Roman.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		444CEB1826F04295003934E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		444CEB1B26F04295003934E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		444CEB1D26F04295003934E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		444CEB2426F042A1003934E7 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		444CEB2526F042A1003934E7 /* ClockMarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockMarks.swift; sourceTree = "<group>"; };
+		444CEB2626F042A1003934E7 /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
+		444CEB2726F042A1003934E7 /* ClockIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockIndicator.swift; sourceTree = "<group>"; };
+		444CEB2D26F046CE003934E7 /* Tungsten-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tungsten-Bold.otf"; path = "assets/Tungsten-Bold.otf"; sourceTree = SOURCE_ROOT; };
+		444CEB3126F04E38003934E7 /* HelveticaLTStd-Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaLTStd-Roman.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +64,11 @@
 		444CEB1326F04293003934E7 /* nikeRunning */ = {
 			isa = PBXGroup;
 			children = (
+				444CEB2326F042A1003934E7 /* Clock View */,
 				444CEB1426F04293003934E7 /* nikeRunningApp.swift */,
 				444CEB1626F04293003934E7 /* ContentView.swift */,
 				444CEB1826F04295003934E7 /* Assets.xcassets */,
+				444CEB2C26F046C1003934E7 /* fonts */,
 				444CEB1D26F04295003934E7 /* Info.plist */,
 				444CEB1A26F04295003934E7 /* Preview Content */,
 			);
@@ -67,6 +81,26 @@
 				444CEB1B26F04295003934E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		444CEB2326F042A1003934E7 /* Clock View */ = {
+			isa = PBXGroup;
+			children = (
+				444CEB2426F042A1003934E7 /* ClockView.swift */,
+				444CEB2526F042A1003934E7 /* ClockMarks.swift */,
+				444CEB2626F042A1003934E7 /* ClockModel.swift */,
+				444CEB2726F042A1003934E7 /* ClockIndicator.swift */,
+			);
+			path = "Clock View";
+			sourceTree = "<group>";
+		};
+		444CEB2C26F046C1003934E7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				444CEB2D26F046CE003934E7 /* Tungsten-Bold.otf */,
+				444CEB3126F04E38003934E7 /* HelveticaLTStd-Roman.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +160,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444CEB3226F04E38003934E7 /* HelveticaLTStd-Roman.otf in Resources */,
+				444CEB2E26F046CE003934E7 /* Tungsten-Bold.otf in Resources */,
 				444CEB1C26F04295003934E7 /* Preview Assets.xcassets in Resources */,
 				444CEB1926F04295003934E7 /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				444CEB1726F04293003934E7 /* ContentView.swift in Sources */,
+				444CEB2A26F04302003934E7 /* ClockModel.swift in Sources */,
+				444CEB2926F04300003934E7 /* ClockMarks.swift in Sources */,
+				444CEB2826F042FB003934E7 /* ClockView.swift in Sources */,
+				444CEB2B26F04305003934E7 /* ClockIndicator.swift in Sources */,
 				444CEB1526F04293003934E7 /* nikeRunningApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

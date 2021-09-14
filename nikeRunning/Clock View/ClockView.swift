@@ -16,8 +16,8 @@ struct ClockView : View {
     
     var body: some View {
         ZStack {
-            Circle().stroke(Color.primary)
-            ClockMarks()
+            //Circle().stroke(Color.primary)
+            //ClockMarks()
             ClockIndicator(type: .hour, time: time)
             ClockIndicator(type: .minute, time: time)
             ClockIndicator(type: .second, time: time)
@@ -41,10 +41,8 @@ struct ClockView : View {
     }
 }
 
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ClockView()
-    }
-}
-#endif
+//struct ContentView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        ClockView()
+//    }
+//}

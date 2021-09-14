@@ -10,8 +10,8 @@ struct ClockIndicator: View {
         
         var color: Color {
             switch self {
-            case .second: return .red
-            default: return .primary
+            case .second: return Color("neon")
+                default: return .white
             }
         }
         
